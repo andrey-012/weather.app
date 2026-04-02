@@ -1,0 +1,383 @@
+:root {
+    --bg:#cdcdcd;
+    --panel:#00bbff;
+    --muted:#457485;
+    --card:#00ffd0;
+    --acent:#a500ff;
+    --glass:rgb(0, 0, 0);
+}
+
+html,body,#app{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',Arial;
+    background: var(--bg);
+    color: #ffffff;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+.app{
+    display: flex;
+    gap: 24px;
+    padding: 28px;
+    align-items: flex-start;
+}
+
+.current-card{
+    background: linear-gradient(180deg,var(--card), rgba(255,255,255, 0.02));
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    min-height: 160px;
+}
+
+.current-card .top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-card .temp {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.current-card .desc {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.current-card .meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.geo-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: inherit;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.current-card .top-row {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.current-card .temp {
+  font-size: 48px;
+  font-weight: 700; 
+  margin-bottom: 6px; 
+}
+
+.current-card .desc {
+  color: var(--muted); 
+  margin-bottom: 10px; 
+}
+
+.current-card .meta {
+  color: var(--muted); 
+  font-size: 14px;
+}
+
+.geo-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06); 
+  color: inherit; 
+  padding: 8px; 
+  border-radius: 8px; 
+}
+
+.five-day {
+  background: var(--panel);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.five-day h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.days-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.days-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--glass);
+  color: var(--muted);
+}
+
+.day-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.day-date {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.search input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: inherit;
+  min-width: 540px;
+}
+
+.search button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: white;
+}
+
+#set-location {
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.today-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.today-card {
+  background: var(--panel);
+  padding: 14px;
+  border-radius: 12px;
+  min-height: 80px;
+}
+
+.today-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.today-card {
+  background: var(--panel);
+  padding: 14px;
+  border-radius: 12px;
+  min-height: 80px;
+}
+
+.today-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.today-card {
+  background: var(--panel);
+  padding: 14px;
+  border-radius: 12px;
+  min-height: 80px;
+}
+
+.today-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.today-card .value {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.hourly-grid {
+  display: flex;
+  gap: 12px;
+  overflow: auto;
+  padding: 8px 4px;
+}
+
+.hour-card {
+  min-width: 96px;
+  background: var(--panel);
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.hour-card .hour {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.hour-card .icon {
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.hour-card .temp {
+  font-weight: 700;
+}
+
+.hour-wind {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.wind-arrow {
+  display: inline-block;
+  transform-origin: center;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.footer {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: 2;
+    flex-direction: row;
+    gap: 12px;
+    overflow: auto;
+  }
+
+  .main {
+    order: 1;
+  }
+
+  .five-day {
+    display: none;
+  }
+
+  .today-card,
+  .hour-card,
+  .days-list li {
+    will-change: transform, opacity;
+  }
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  background: rgba(20, 22, 24, 0.75);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+  z-index: 100;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  animation: fadeIn 0.25s ease;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.suggest-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+  color: #e6eef7;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.suggest-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.geo-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.geo-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accent);
+}
+
+.geo-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.search button {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+

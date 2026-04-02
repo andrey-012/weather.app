@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app" class="app">
+        <aside class="sidebar">
+            <div class="current-card" id="current-card">
+                <div class="top-row">
+                    <div class="temp">-</div>
+                </div>
+                <div class="desc">Загрузка...</div>
+                <div class="meta">
+                    <div id="date">-</div>
+                    <div id="location">-</div>
+                </div>
+                    <div class="five-day">
+                <h3>Прогноз на 5 дней</h3>
+                <div id="days-list" class="days-list"></div>
+                </div>
+            </div>
+        </aside>
+        <main class="main">
+            <header class="header">
+                <div class="search">
+                    <input id="location-input" placeholder="Введите локацию (напр. Krasnoyarsk)">
+                    <button id="set-location">Найти</button>
+                </div>
+            </header>
+            <section class="today" id="today">
+                <h2>Сегодня</h2>
+                <div class="today-grid" id="today-grid">
+                </div>
+            </section>
+            <section class="hourly" id="hourly">
+                <h2>Почасовой прогноз</h2>
+                <div class="hourly-grid" id="hourly-grid"></div>
+            </section>
+            <div class="weather-map" id="weather-map"></div>
+             <footer class="footer">
+                <small>Наше приложение созданно для просмотра погоды</small>
+            </footer>
+
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

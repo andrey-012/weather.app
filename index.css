@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+    background-color: rgb(26, 63, 65);
+    color: rgba(255, 255, 255, 0.61);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(65, 63, 63);
+}
+
+header h1{
+    margin: 0;
+    font-size: 20px;
+}
+
+nav a{
+    color: rgb(202, 179, 179);
+    margin-left: 20px;
+}
+
+nav a:hover{
+    color: chartreuse;
+}
+
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.h ero p{
+    color: rgb(202, 179, 179);
+}
+
+.button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: blue;
+    color: white;
+    border-radius: 8px;
+}
+
+.project{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+
+.card{
+    background-color: rgb(9, 9, 70);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.card h4{
+    margin-top: 0;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: rgb(59, 59, 59);
+}
